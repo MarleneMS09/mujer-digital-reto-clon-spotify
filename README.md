@@ -1,6 +1,6 @@
-![logo_ironhack_blue 7](https://scontent.fqro1-1.fna.fbcdn.net/v/t31.18172-8/18056076_1260416267412871_2556386545607301962_o.jpg?_nc_cat=109&ccb=1-7&_nc_sid=174925&_nc_ohc=U2UzqVr69KEAX_IOQlu&_nc_ht=scontent.fqro1-1.fna&oh=00_AT-jUV-Vrh8V6-flzLRlCaLWh6UpXx3RG2bWgVevUcpzJw&oe=62C3D51A)
+![logo_actosoft](https://actosoft.com.mx/assets/logo.df3233ae.png)
 
-# Laboratorio | HTML & CSS - Clon de Spotify
+# Actosoft Laboratorio | HTML & CSS - Clon de Spotify
 
 ## Introducción
 
@@ -12,32 +12,36 @@ En este laboratorio, construiremos una versión simplificada de la página de de
 
 <br>
 
-Todos los recursos necesarios al igual que las imagenes estan en en el proyecto. Puede usar el siguiente link para ver el resultado final al que hay que llegar **[full-length PDF version of the website](https://s3-eu-west-1.amazonaws.com/ih-materials/uploads/spotify-prototype.pdf)**.
+Todos los recursos necesarios al igual que las imágenes están en el proyecto. Puede usar el siguiente link para ver el resultado final al que hay que llegar **[full-length PDF version of the website](https://actosoft-academy-public.s3.amazonaws.com/web-fundamentals-course-2022/spotify-clone.pdf)**.
 
 ## Requisitos
 
-- Forkea este repo
-- Clona este repo
+- Realiza un Fork de este repo a tu cuenta de personal de Github.
+- Clona el repo clonado que se encuentra en tu cuenta personal.
 
 ## Entrega del Lab
 
-Al terminar su laboratorio ejecute en la terminal dentro de la carpeta del proyecto:
+Al terminar este laboratorio sube tus cambios a tu copia en Github
 
 ```shell
-$ git add .
-$ git commit -m "Terminado"
 $ git push origin master
 ```
 
-Crea un Pull Request(PR), para que tus profesores puedan revisar tu trabajo.
+NOTA: Puedes crear las versiones que tu quieras para terminarlo.
+```shell
+$ git add .
+$ git commit -m "Mensaje de la versión"
+```
+
+Crea un Pull Request(PR) de tu repositorio clonado al repositorio original, para que tus profesores puedan revisar tu trabajo.
 
 ## Instrucciones
 
-En la carpeta tienes algunos recursos que te seran de utilidad - en la carpeta `images`, Ahi encontraras las imagenes necesarias, el texto plano que usaras para la pagina se encuentra en el archivo `index.html`. Por favor escribe tu codigo en de HTML y CSS en los archivos `index.html` y `styles/style.css`, respectivamente. Recuerda usar las mejores practicas.
+En la carpeta tienes algunos recursos que te seran de utilidad - en la carpeta `images`, Ahí encontrarás las imágenes necesarias, el texto plano que usarás para la página se encuentra en el archivo `index.html`. Por favorm escribe tu codigo en de HTML y CSS en los archivos `index.html` y `styles/style.css`, respectivamente. Recuerda usar las mejores prácticas.
 
-La pagina esta dividida en 4 secciones,  tendremos que dividirla en secciones usando cualquiera de las etiquetas que ya conoces para agrupar!
+La pagina esta dividida en 4 secciones, tendremos que dividirla en secciones usando cualquiera de las etiquetas que ya conoces para agrupar!
 
-En general, los diseños de los sitios web se planean y los hace otro equipo de TI(UX/UI), asi que tendremos la mayoria del tiempo bocetos o archivos donde nos pasen el diseño de la página. Para nosotros es buena idea al principio pasarle archivos donde pueda ver el diseño dividido en secciones con cajitas de colores así su mente sabrá mejor cómo estructurar su HTML.
+En general, los diseños de los sitios web se planean y los hace otro equipo de TI( UX/UI), así que tendremos la mayoria del tiempo bocetos o archivos donde nos pasen el diseño de la página. Para nosotros es buena idea al principio pasarle archivos donde pueda ver el diseño dividido en secciones con cajitas de colores así su mente sabrá mejor cómo estructurar su HTML.
 
 _**La forma de  construir la página no esta detallada, así que, buena suerte**_ :smile:
 
@@ -50,19 +54,23 @@ Vamos a hacer esta pagina!
 ### Parte 1: Barra de Navegacion o Navbar
 
 - La barra de navegación debe tener un `position: fixed`.
-- Alinie el logo a la izquierda y la etiqueta `ul` con los links hacia la derecha, ya sea usando `float` o `flex`.
+- Alinea el logo a la izquierda y la etiqueta `ul` con los links hacia la derecha, ya sea usando `float` o `flex`.
 
 ### Parte 2: Coloca la imagen a lo largo del lienzo
 
-- Para esta seccion le recomiendo revisar [esta guia](https://css-tricks.com/centering-css-complete-guide/) en cosas específicas.
+- Para esta sección te recomiendo revisar [esta guía](https://css-tricks.com/centering-css-complete-guide/) en cosas específicas.
 
 ### Parte 3: Qué hay en la sección de Spotify
 
-- Parece que los `div` ocupan al rededor de un tercio en cada contenedor. Como podemos representar esto con el codigo?
+- Parece que los `div` ocupan alrededor de un tercio en cada contenedor. ¿Cómo podemos representar esto con el código?
 
 ### Parte 4: La seccion Verde
 
 - Parece que necesitamos dos secciones principales, La parte de los textos y la parte de la imagen.
 - Posiciona el logo de spotify en el fondo verde verde `div`.
 
-Que te diviertas codeando, estudia ingles! :heart:
+## BONUS: Responsive Design
+
+- Esto queda a tu imaginación. ¿Cómo acomodarías los elementos cuando tu clon de Spotify se vea desde un teléfono o una tableta? Demuéstranos tus skills y creatividad añadiendo responsive design al sitio, de tal manera que la página se vea increíble y sea muy legible y accesible desde cualquier sitio :sunglasses:.
+
+¡Que te diviertas codeando, estudia ingles! :heart:
