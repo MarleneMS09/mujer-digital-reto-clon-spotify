@@ -1,6 +1,6 @@
-![logo_actosoft](https://actosoft.com.mx/assets/logo.df3233ae.png)
+![logo_mujer_digital](https://jamujerdigital.org/wp-content/uploads/2023/05/LOGO-MD_Mesa-de-trabajo-1-e1683037880272.png)
 
-# Actosoft Laboratorio | HTML & CSS - Clon de Spotify
+# Mujer Digital C2 | Reto #1 - Clon de Spotify
 
 ## Introducción
 
@@ -16,24 +16,7 @@ Todos los recursos necesarios al igual que las imágenes están en el proyecto. 
 
 ## Requisitos
 
-- Realiza un Fork de este repo a tu cuenta de personal de Github.
-- Clona el repo clonado que se encuentra en tu cuenta personal.
-
-## Entrega del Lab
-
-Al terminar este laboratorio sube tus cambios a tu copia en Github
-
-```shell
-$ git push origin master
-```
-
-NOTA: Puedes crear las versiones que tu quieras para terminarlo.
-```shell
-$ git add .
-$ git commit -m "Mensaje de la versión"
-```
-
-Crea un Pull Request(PR) de tu repositorio clonado al repositorio original, para que tus profesores puedan revisar tu trabajo.
+- Descarga este repositorio en formato `.zip`, o bien, realiza un fork de este repositorio a tu cuenta personal de Github (en caso de que cuentes con una) y clona el repositorio.
 
 ## Instrucciones
 
@@ -41,17 +24,17 @@ En la carpeta tienes algunos recursos que te seran de utilidad - en la carpeta `
 
 La pagina esta dividida en 4 secciones, tendremos que dividirla en secciones usando cualquiera de las etiquetas que ya conoces para agrupar!
 
-En general, los diseños de los sitios web se planean y los hace otro equipo de TI( UX/UI), así que tendremos la mayoria del tiempo bocetos o archivos donde nos pasen el diseño de la página. Para nosotros es buena idea al principio pasarle archivos donde pueda ver el diseño dividido en secciones con cajitas de colores así su mente sabrá mejor cómo estructurar su HTML.
+En general, los diseños de los sitios web se planean y los hace otro equipo de TI (UX/UI), así que tendremos la mayoria del tiempo bocetos o archivos donde nos pasen el diseño de la página. Para nosotros es buena idea al principio pasarle archivos donde pueda ver el diseño dividido en secciones con cajitas de colores así su mente sabrá mejor cómo estructurar su HTML.
 
-_**La forma de  construir la página no esta detallada, así que, buena suerte**_ :smile:
+_**La forma de  construir la página no esta detallada, así que, buena suerte**_ 😊
 
 :muscle: :muscle: :muscle:
 <br>
 ![](https://res.cloudinary.com/ihwebdeb/image/upload/v1571085836/Ironhack/spotify-prototype_1x_ahk8ep.jpg)
 
-Vamos a hacer esta pagina!
+¡Vamos a hacer esta pagina!
 
-### Parte 1: Barra de Navegacion o Navbar
+### Parte 1: Barra de Navegación o Navbar
 
 - La barra de navegación debe tener un `position: fixed`.
 - Alinea el logo a la izquierda y la etiqueta `ul` con los links hacia la derecha, ya sea usando `float` o `flex`.
