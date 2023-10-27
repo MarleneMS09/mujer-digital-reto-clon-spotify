@@ -1,18 +1,207 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Spotify Clone</title>
-    <!-- don't forget to link your styles -->
-  </head>
-  <body>
-    Premium Discover Help Download Music for everyone. Spotify is now free on mobile, tablet and computer. Listen to the
-    right music, wherever you are. What’s on Spotify? Millions of Songs There are millions of songs on Spotify HD Music
-    Listen to music as if you were listening live Stream Everywhere Stream music on your smartphone, tablet or computer
-    It’s as yeezy as Kanye West. Search Know what you want to listen to? Just search and hit play. Browse Check out the
-    latest charts, brand new releases and great playlists for right now. Discover Enjoy new music every Monday with your
-    own personal playlist. Or sit back and enjoy Radio.
-  </body>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Spotify Clone</title>
+  <link rel="stylesheet" href="./css/styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bona+Nova&family=Inter:wght@300&family=Montserrat:wght@100;200;300;500&family=Roboto:wght@300&family=Sometype+Mono:wght@500&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/82f797382f.js" crossorigin="anonymous"></script>
+
+
+
+
+</head>
+
+<body>
+
+
+  <!--Header -navbar -->
+  <header>
+    <a href="index.html" class="logo-link">
+        <div class="logo">
+            <img src="./images/spotify-logo.png" alt="logo-Spotify">
+        </div>
+    </a>
+    
+    <nav class="navbar">
+        <i class="fas fa-bars menu-icon"></i>
+        <ul class="nav-links">
+            <li><a href="enlace-a-premium.html">Premium</a></li>
+            <li><a href="enlace-a-discover.html">Discover</a></li>
+            <li><a href="enlace-a-help.html">Help</a></li>
+            <li><a href="enlace-a-download.html">Download</a></li>
+        </ul>
+    </nav>
+</header>
+
+<!---first section - imagen and principal title -->
+  <main>
+    <div id="main" class="image-container">
+      <img src="./images/landing.jpg" alt="foto-principal">
+      <div class="text-main">
+          <h1>Music for everyone.</h1>
+          <p>Spotify is now free on mobile, tablet and computer. <br>Listen to the right music, whenever you are.</p>
+      </div>
+  </div>
+  </main>
+
+
+
+<!--Second section - icons with texts-->  
+
+<section>
+<div id="second-section">
+  <h2>What's on Spotify?</h2>
+  <div class="grid-container">
+    <div class="grid-item">
+      <img src="./images/music-icon.webp" alt="">
+      <h3>Millions of Songs</h3>
+      <p>There are millions of <br>
+      on Spotify</p>
+    </div>
+    <div class="grid-item">
+      <img src="./images/high-quality-icon.png" alt="">
+      <h3>HD Music</h3>
+      <p>Listen to music as if you <br>
+      were listening live</p>
+    </div>
+    <div class="grid-item">
+      <img src="./images/devices-icon.png" alt="">
+      <h3> Stream Everywhere</h3>
+      <p>Stream music on your <br>
+      smartphone, tablet or<br>
+    computer</p>
+    </div>
+  </div>
+</div>
+</section>
+
+
+<!--aditional section - albums -->
+
+
+<section id="aditional-section">
+  <h2>Playlist de Spotify</h2>
+  <div id="spotify-playlists">
+    <div class="playlist-card">
+      <a href="https://www.youtube.com/watch?v=eVNNfmr_vWI&list=PLfiMjLyNWxeYt0dH7BHSvCNCNsK_EfJeZ" target="_blank">
+        <img src="./images/musictaylorswift.jpg" alt="Nombre de la lista de reproducción">
+        <h3>Taylor Swift</h3>
+        <p>The fearless album's Taylor Swift</p>
+      </a>
+    </div>
+    <div class="playlist-card">
+      <a href="https://www.youtube.com/watch?v=R_rUYuFtNO4&list=PLmU8B4gZ41if_QtC4rOeuYbeVVoM5CP_Q&index=2" target="_blank">
+        <img src="./images/Red-Courtesy-of-Spotify.jpg" alt="Nombre de la lista de reproducción">
+        <h3>Taylor Swift</h3>
+        <p>The RED album's Taylor Swift</p>
+      </a>
+    </div>
+    <div class="playlist-card">
+      <a href="https://www.youtube.com/watch?v=xYLxUJ9v6KU&list=PLbf3ayzuvZVU9NvZVGv4EE_YLlli0IEpt" target="_blank">
+        <img src="./images/reputationts.jpg" alt="Nombre de la lista de reproducción">
+        <h3>Taylor Swift</h3>
+        <p>The Reputation's Taylor Swift</p>
+      </a>
+    </div>
+    <div class="playlist-card">
+      <a href="https://www.youtube.com/watch?v=p1cEvNn88jM&list=PLkqz3S84Tw-RdM_IQwtQrYJpkOmJH2Ngw" target="_blank">
+        <img src="./images/lover.jpeg" alt="Nombre de la lista de reproducción">
+        <h3>Taylor Swift</h3>
+        <p>The Lover album's Taylor Swift</p>
+      </a>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+<!--Third section - texts, icon and reproductor imagen -->
+
+<section>
+  <div id="third-section">
+    <div class="wrapper">
+       
+      <div class="contenido">
+        <h4> Listen your favorite music</h4>
+        <div class="bloque">
+          <h2>Search</h2>
+          <p>Know what you want to listen to?<br>Just search and hit play</p>
+        </div>
+        <div class="bloque">
+          <h2>Browse</h2>
+          <p>Check out the latest charts, <br>brand new releases and great<br>playlists for right now</p>
+        </div>
+        <div class="bloque">
+          <h2>Discover</h2>
+          <p>Enjoy new music every Monday <br>with your own personal playlist. <br>Or sit back and enjoy Radio</p>
+        </div>
+      </div>
+      <div id="imgs">
+        <div class="logo-container">
+          <img src="./images/spotify-icon-white.webp" alt="Logo">
+        </div>
+        <div class="reproductor-container">
+          <img src="./images/spotify-app.webp" alt="Reproductor">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+<footer>
+  <div class="footer-content">
+    <div class="footer-logo">
+      <a href="index.html"> <!-- Agregar un enlace al home -->
+        <img src="./images/spotify-logo.png" alt="Logo">
+      </a>
+    </div>
+    <div class="footer-links">
+      <ul>
+        <li><a href="#">Términos y condiciones</a></li>
+        <li><a href="#">Política de privacidad</a></li>
+        <li><a href="#">Contáctanos</a></li>
+      </ul>
+    </div>
+    <div class="footer-social">
+      <a href="https://www.linkedin.com/in/vanessamarlenemsanchez/"><i class="fab fa-linkedin"></i></a> 
+      <a href="https://twitter.com/VMarleneMSchez"><i class="fab fa-twitter"></i></a>
+      <a href="https://www.instagram.com/taylorswift/"><i class="fab fa-instagram"></i></a>
+    </div>
+  </div>
+  <p>&copy; 2023 Clon de Spotify</p>
+</footer>
+
+
+<script src="./js/main.js"></script>
+
+</body>
+
+
+
+
+<!--This proyect was created for team 033 for challenge from Mujer Digital: 
+  
+Vanessa Marlene Morfin Sanchez
+Ruby Berenice May Rodríguez
+Sonia Gabriela Vazquez Reyes
+Bere Arce-->
+
+
+
+
+
 </html>

@@ -1,0 +1,644 @@
+/* Colors */
+:root {
+    --text-color: #1A1A1A;
+    --text-icons: #00B172;
+    --text-functionality: #FFF; 
+}
+
+/* Principal */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Corregido el valor de box-sizing */
+}
+
+/* Logo */
+.logo img {
+    width: 130px;
+    height: auto;
+    margin-left: 15%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    transition: transform 0.2s;
+}
+
+.logo-link {
+    text-decoration: none;
+    display: inline-block;
+}
+
+.logo-link:hover .logo img {
+    transform: scale(1.1);
+}
+
+
+
+
+/* Header & Navbar */
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1px;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-left: auto;
+}
+
+nav li, nav a {
+    margin-right: 10px;
+    color: var(--text-color);
+    font-size: 20px;
+    margin-top: 11px;
+}
+
+nav a {
+    text-decoration: none;
+    text-transform: none;
+    margin-left: 10px;
+}
+
+
+.menu-icon {
+    display: none;
+}
+
+
+
+nav a:hover {
+    font-size: 20px;
+    color: var(--text-icons);
+    transition: font-size 0.2s, color 0.3s;
+}
+
+
+
+
+/* Responsividad para dispositivos móviles */
+@media screen and (max-width: 768px) {
+    .logo img {
+        width: 120px;
+        height: 40px;
+        margin-bottom: 5px;
+        margin-top: 5px;
+    }
+
+    .menu-icon {
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 15px;
+        cursor: pointer;
+        color: var(--text-icons);
+    }
+
+    nav ul {
+        display: none;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background-color: #ffffff;
+        padding: 10px;
+    }
+
+    nav ul.active {
+        display: flex;
+        flex-direction: column;
+        background-color: var(--text-icons);
+    }
+
+    nav a:hover {
+        font-size: 20px;
+        color: #fff;
+        transition: font-size 0.2s, color 0.3s;
+    }
+    
+
+}
+@media screen and (min-width: 769px) {
+    .menu-icon {
+        display: none !important; 
+    }
+}
+
+
+/* main section - first section*/
+
+.image-container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    z-index: -1; 
+}
+
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+}
+
+
+/* Responsiveness main section */
+
+@media (max-width: 768px) {
+    .image-container {
+        height: 590px;
+    }
+    .image-container img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+
+
+/* texts of first section */ 
+
+.text-main {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+    margin-top: -50px;
+}
+
+.text-main h1 {
+    font-size: 60px;
+    margin: 40px;
+    animation: moveH1 3s linear infinite;
+    white-space: nowrap;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+/* Responsiveness first section */
+
+@media (max-width: 768px) {
+    .text-main {
+        position: absolute;
+        top: 50%;
+        text-align: center;
+    }
+    .text-main h1 {
+        font-size: 20px;
+        margin: 20px;   
+        align-items: center;
+        margin-right: 70px;
+    }
+}
+
+
+
+@keyframes moveH1 {
+    0% {
+      transform: translateX(10px);
+    }
+    50% {
+      transform: translateX(50px);
+    }
+    100% {
+      transform: translateX(10px);
+    }
+  }
+
+
+.text-main p {
+    font-size: 20px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+@media (max-width: 768px) {
+    .text-main p {
+        font-size: 11px;
+        white-space: nowrap;
+    }
+}
+
+
+
+/* second section */
+
+#second-section h2 {
+    text-align: center;
+    font-size: 40px;
+    margin-top: 140px;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+
+.grid-container {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+#second-section .grid-container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  #second-section .grid-item {
+    text-align: center;
+    flex: 1;
+    max-width: 50%;
+  }
+ .grid-item img {
+    width: 140px;
+    margin-top: 80px;
+ }
+  .grid-item h3 {
+    font-size: 30px;
+    margin-top: 60px;
+    color: var(--text-icons);
+    white-space: nowrap;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  .grid-item p {
+    font-size: 18px;
+    margin-bottom: 250px;
+    margin-top: 50px;
+    font-family: 'Montserrat';
+    font-weight: 500;
+  }
+
+
+/* Responsiveness second section */
+
+  @media (max-width: 768px) {
+    #second-section h2 {
+        font-size: 28px;
+        margin-bottom: 50px;
+    }
+
+    .grid-container {
+        flex-direction: column; 
+    }
+
+    .grid-item img {
+        width: 100px;
+        margin-top: 20px;
+    }
+
+    .grid-item h3 {
+        font-size: 20px;
+        margin-top: 20px;
+    }
+
+    .grid-item p {
+        font-size: 13px;
+        margin-bottom: 20px;
+        margin-top: 10px;
+    }
+}
+
+
+
+
+/* Playist de spotify - additional section */
+
+
+
+#aditional-section {
+    text-align: center; 
+    margin-top: 50px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#aditional-section h2 {
+    text-align: center;
+    font-size: 40px;
+    margin-top: 140px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 50px;
+    color: black;
+}
+
+#spotify-playlists {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; 
+    align-items: center;
+    
+}
+
+.playlist-card {
+    margin: 10px;
+    background-color: transparent;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    padding: 10px;
+    max-width: calc(33.33% - 20px); 
+    text-align: center; 
+    box-sizing: border-box;
+    margin-bottom: 100px;
+}
+
+.playlist-card a {
+    text-decoration: none;
+    color: black; 
+}
+
+
+
+.playlist-card img {
+    max-width: 100px;
+    display: block;
+    margin: 0 auto;
+    border-radius: 20px;
+}
+
+.playlist-card h3 {
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+.playlist-card p {
+    font-size: 14px;
+}
+
+
+.playlist-card:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+    filter: brightness(1.2); 
+}
+
+
+
+
+@media (max-width: 1024px) {
+    #spotify-playlists {
+        flex-direction: column;
+    }
+
+    .playlist-card {
+        max-width: 100%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Third section */
+
+#third-section {
+    margin: 0px 40px;
+    margin-top: 70px;
+    background-color:var(--text-icons);
+   margin-bottom: 0px;
+    
+}
+/* Ajustes para el título y textos */
+
+.bloque h2 {
+    font-size: 30px;
+    margin-left: 80px;
+    color: var(--text-functionality);
+    margin-bottom: 15px;
+    margin-top: 60px;
+    margin-bottom: 0px;
+}
+
+.bloque p {
+    font-size: 20px;
+    margin-left: 80px;
+    color: var(--text-functionality);
+    margin-top: 10px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 200;
+
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+
+.contenido h4 {
+    font-size: 24px;
+    color: var(--text-functionality);
+    text-decoration: underline;
+    text-decoration-thickness: 3px;
+    text-underline-offset: 30px;
+    white-space: nowrap;
+    margin-left: 66px;
+    padding: 20px;
+    margin-top: 20px;
+    font-family: 'Montserrat';
+    font-weight: 500;
+}
+
+#imgs {
+    display: flex;
+}
+
+
+.logo-container {
+    margin-right: 60px;
+    margin-top: 390px;
+    width: 20px;
+    height: auto;
+    display: inline-block; 
+    margin-left: 120px;
+   
+
+}
+
+.reproductor-container {
+    margin: auto;
+    margin-left: 160px;
+    margin-top: 60px;
+
+}
+
+
+
+
+/* Responsivenss third section */
+
+@media screen and (max-width: 1024px) {
+    #third-section {
+        padding: 70px 20px; 
+        background-color: var(--text-icons);
+    }
+
+    .bloque h2 {
+        font-size: 24px; 
+        text-align: center;
+        margin: 10px 0;
+    }
+
+    .bloque p {
+        font-size: 15px;
+        text-align: center;
+        margin: 10px 0;
+    }
+
+    .wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contenido h4 {
+        font-size: 15px;
+        text-align: center;
+        margin: 10px 0;
+        text-decoration-thickness: 2px;
+        text-underline-offset: 10px;
+    }
+
+    #imgs {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .logo-container {
+        text-align: center;
+        margin: 10px auto;
+
+    }
+    .logo-container img {
+        margin: 30px auto; 
+        position: relative;
+        margin-bottom: 30px;
+        max-width: 200%;
+    }
+
+    .reproductor-container {
+        margin: 50px 10px;
+        text-align: center;
+    }
+
+    .reproductor-container img {
+        max-width: 70%;
+    }
+}
+
+
+
+/*  footer */
+footer {
+    background-color: #333;
+    color: #fff; 
+    text-align: center;
+    padding: 20px 0;
+  }
+  
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  .footer-logo img {
+    width: 100px;
+  }
+  
+  .footer-links ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-links li {
+    display: inline;
+    margin-right: 20px;
+  }
+  
+  .footer-links a {
+    text-decoration: none;
+    color: #fff;
+  }
+  
+  .footer-social a {
+    font-size: 24px;
+    color: #fff;
+    margin-right: 10px;
+  }
+  
+  footer p {
+    margin-top: 20px;
+    font-size: 14px;
+  }
+  
+  
+
+  /* Responsiveness footer*/
+
+@media (max-width: 768px) {
+    .footer-content {
+      flex-direction: column;
+   
+      padding: 0 10px;
+      text-align: center;
+    }
+  
+    .footer-logo {
+      margin-bottom: 20px;
+    }
+  
+    .footer-links {
+      margin-top: 20px;
+    }
+  
+    .footer-links ul {
+      text-align: center;
+    }
+  
+    .footer-links li {
+      display: block;
+      margin-bottom: 10px;
+    }
+  
+    .footer-social {
+      margin-top: 20px;
+      text-align: center;
+    }
+  
+    footer p {
+      text-align: center;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .footer-logo img {
+      width: 80px;
+    }
+  
+    .footer-links a {
+      font-size: 14px;
+    }
+  
+    .footer-social a {
+      font-size: 20px;
+    }
+  }
+  
