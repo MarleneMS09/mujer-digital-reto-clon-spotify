@@ -79,10 +79,17 @@ nav a:hover {
     transition: font-size 0.2s, color 0.3s;
 }
 
+header.scrolling {
+    position: fixed;
+    background-color: transparent;
+
+}
 
 
 
-/* Responsividad para dispositivos móviles */
+
+
+/* Responsiveness navbar */
 @media screen and (max-width: 768px) {
     .logo img {
         width: 120px;
@@ -138,6 +145,7 @@ nav a:hover {
     height: 100vh;
     overflow: hidden;
     z-index: -1; 
+    margin-top: 0;
 }
 
 
@@ -230,50 +238,60 @@ nav a:hover {
 
 
 /* second section */
-
 #second-section h2 {
     text-align: center;
     font-size: 40px;
-    margin-top: 140px;
-    font-family:Arial, Helvetica, sans-serif;
+    margin-top: 100px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 10px;
 }
 
-
 .grid-container {
-    display:flex;
+    display: flex;
     justify-content: space-between;
     align-items: center;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
 }
 
 #second-section .grid-container {
     display: flex;
     justify-content: space-between;
-  }
+    width: 100%;
+    margin-bottom: 100px;
+}
 
-  #second-section .grid-item {
+#second-section .grid-item {
     text-align: center;
     flex: 1;
-    max-width: 50%;
-  }
- .grid-item img {
+    max-width: calc(33.33% - 20px);
+    margin: 10px; 
+    padding: 20px; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    border-radius: 10px; 
+}
+
+.grid-item img {
     width: 140px;
-    margin-top: 80px;
- }
-  .grid-item h3 {
-    font-size: 30px;
-    margin-top: 60px;
+    margin-top: 20px; 
+}
+
+.grid-item h3 {
+    font-size: 20px;
+    margin-top: 20px;
     color: var(--text-icons);
     white-space: nowrap;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  }
-  .grid-item p {
+}
+
+.grid-item p {
     font-size: 18px;
-    margin-bottom: 250px;
-    margin-top: 50px;
+    margin-top: 20px; 
     font-family: 'Montserrat';
     font-weight: 500;
-  }
+}
 
 
 /* Responsiveness second section */
@@ -311,73 +329,76 @@ nav a:hover {
 /* Playist de spotify - additional section */
 
 
-
 #aditional-section {
-    text-align: center; 
-    margin-top: 50px;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-bottom: 30px;
+    z-index: -1;
 }
+
 #aditional-section h2 {
     text-align: center;
     font-size: 40px;
-    margin-top: 140px;
+    margin-top: 30px;
     font-family: Arial, Helvetica, sans-serif;
-    margin-bottom: 50px;
+    margin-bottom: 60px;
     color: black;
 }
 
 #spotify-playlists {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center; 
+    justify-content: center;
     align-items: center;
-    
 }
 
 .playlist-card {
     margin: 10px;
-    background-color: transparent;
-    border: 1px solid transparent;
-    border-radius: 5px;
-    padding: 10px;
-    max-width: calc(33.33% - 20px); 
-    text-align: center; 
+    background-color: #fff; 
+    border: 1px solid #ddd; 
+    border-radius: 15px;
+    padding: 55px;
+    max-width: calc(33.33% - 20px);
+    text-align: center;
     box-sizing: border-box;
-    margin-bottom: 100px;
+    margin-bottom: 50px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    transition: transform 0.3s, box-shadow 0.3s; 
+    overflow: hidden; 
 }
 
 .playlist-card a {
     text-decoration: none;
-    color: black; 
+    color: black;
 }
-
-
 
 .playlist-card img {
-    max-width: 100px;
+    width: 100px;
+    height: 100px; 
     display: block;
     margin: 0 auto;
-    border-radius: 20px;
+    border-radius: 50%;
+    margin-bottom: 30px;
 }
+
 
 .playlist-card h3 {
     font-size: 20px;
     margin: 10px 0;
+    color: var(--text-icons);
 }
 
 .playlist-card p {
-    font-size: 14px;
+    font-size: 12px;
+    
 }
-
 
 .playlist-card:hover {
-    transform: scale(1.1);
-    transition: transform 0.3s ease;
-    filter: brightness(1.2); 
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
+    transition: transform 0.3s, box-shadow 0.3s;
+    background-color:#ceeae0;
 }
-
-
-
 
 @media (max-width: 1024px) {
     #spotify-playlists {
@@ -413,16 +434,17 @@ nav a:hover {
 /* Ajustes para el título y textos */
 
 .bloque h2 {
-    font-size: 30px;
+    font-size: 20px;
     margin-left: 80px;
     color: var(--text-functionality);
     margin-bottom: 15px;
     margin-top: 60px;
     margin-bottom: 0px;
+    font-family: 'Montserrat';
 }
 
 .bloque p {
-    font-size: 20px;
+    font-size: 15px;
     margin-left: 80px;
     color: var(--text-functionality);
     margin-top: 10px;
@@ -439,11 +461,11 @@ nav a:hover {
 
 
 .contenido h4 {
-    font-size: 24px;
+    font-size: 20px;
     color: var(--text-functionality);
     text-decoration: underline;
     text-decoration-thickness: 3px;
-    text-underline-offset: 30px;
+    text-underline-offset: 15px;
     white-space: nowrap;
     margin-left: 66px;
     padding: 20px;
@@ -548,6 +570,7 @@ footer {
     color: #fff; 
     text-align: center;
     padding: 20px 0;
+    font-family: 'Montserrat';
   }
   
   .footer-content {
@@ -571,6 +594,7 @@ footer {
   .footer-links li {
     display: inline;
     margin-right: 20px;
+    font-size: 12px;
   }
   
   .footer-links a {
@@ -579,14 +603,26 @@ footer {
   }
   
   .footer-social a {
-    font-size: 24px;
+    font-size: 21px;
     color: #fff;
     margin-right: 10px;
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+    background-color: #555;
+    text-decoration: none;
+  }
+  
+  .footer-social a:hover {
+    background-color: var(--text-icons);
   }
   
   footer p {
     margin-top: 20px;
-    font-size: 14px;
+    font-size: 10px;
   }
   
   
@@ -617,6 +653,10 @@ footer {
       display: block;
       margin-bottom: 10px;
     }
+
+
+    
+
   
     .footer-social {
       margin-top: 20px;
